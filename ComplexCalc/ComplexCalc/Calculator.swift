@@ -10,6 +10,12 @@ import Foundation
 
 // All your work will go in here
 class Calculator {
+    public func add(lhs: (Int, Int), rhs: (Int, Int)) -> (Int, Int) {
+        return (lhs.0 + rhs.0, lhs.1 + rhs.1)
+    }
+    public func subtract(lhs: (Int, Int), rhs: (Int, Int)) -> (Int, Int) {
+        return (lhs.0 - rhs.0, lhs.1 - rhs.1)
+    }
     public func add(_ arg: [Int]) -> Int {
         var sum = 0
         for num in arg {
