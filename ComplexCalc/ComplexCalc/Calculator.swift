@@ -18,14 +18,12 @@ class Calculator {
         total["y"] = lhs["y"]! + rhs["y"]!
         return total
     }
-    
     public func subtract(lhs: [String: Int], rhs: [String: Int]) -> [String: Int] {
         var total = ["x": 0, "y": 0]
         total["x"] = lhs["x"]! - rhs["x"]!
         total["y"] = lhs["y"]! - rhs["y"]!
         return total
     }
-    
     // math op functions
     public func mathOp(args: [Int], beg: Int, op: (Int, Int) -> Int) -> Int {
         var total = beg
